@@ -1263,7 +1263,7 @@ export default function Layout(props) {
                                                                                     alignItems="center"
                                                                                 >   
                                                                                     <Grid item>
-                                                                                        <Typography variant="body2">Image route above is for illustration only and may or may not be the actual path. Please refer to PEC for further information.</Typography>
+                                                                                        <Typography variant="body2">Routes image is for illustration only and may not be the actual path of the shuttle. Please refer to PEC for further information.</Typography>
                                                                                     </Grid>
                                                                                     <Grid item>
                                                                                         <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
