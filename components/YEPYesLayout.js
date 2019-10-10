@@ -256,7 +256,7 @@ function StepCase0(data){
                 </Typography>
             </Grid> 
             <Grid item lg={12}>
-                <Typography variant="body2">
+                <Typography variant="body2" color="textSecondary">
                     Ready to commute? We recommend to use our shuttle services.
                 </Typography>
             </Grid>
@@ -1263,7 +1263,7 @@ export default function Layout(props) {
                                                                                     alignItems="center"
                                                                                 >   
                                                                                     <Grid item>
-                                                                                        <Typography variant="body2">Routes image is for illustration only and may not be the actual path of the shuttle. Please refer to PEC for further information.</Typography>
+                                                                                        <Typography variant="body2" color="textSecondary">Routes image is for illustration only and may not be the actual path of the shuttle. Please refer to PEC for further information.</Typography>
                                                                                     </Grid>
                                                                                     <Grid item>
                                                                                         <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
@@ -1328,6 +1328,9 @@ export default function Layout(props) {
                                                                             justify="flex-end"
                                                                             alignItems="center"
                                                                         >
+                                                                            <Grid item>
+                                                                                <Typography variant="body2" color="textSecondary">By clicking 'Get Ticket', you agree that you will join to our 2019 Year End Party!</Typography>
+                                                                            </Grid>
                                                                             <Grid item>
                                                                                 <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                                                                                     Back
