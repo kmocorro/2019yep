@@ -207,7 +207,7 @@ export default function Layout(props) {
                             <Grid container spacing={2}>
                                 <Grid item>
                                     <Typography variant={"caption"}>
-                                        Do not forget to take a photo on the QR code. 
+                                        Do not forget to take a photo of the QR code. 
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -330,7 +330,7 @@ export default function Layout(props) {
                             <Grid container spacing={2}>
                                 <Grid item>
                                     <Typography variant={"caption"}>
-                                        Do not forget to take a photo on the QR code. 
+                                        Do not forget to take a photo of the QR code. 
                                     </Typography>
                                 </Grid>
                             </Grid>

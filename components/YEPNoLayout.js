@@ -63,6 +63,9 @@ const useStyles = makeStyles(theme => ({
         paddingTop: theme.spacing(5),
         paddingBottom: theme.spacing(8),
     },
+    pos: {
+        marginBottom: 6,
+    },
     title: {
         fontSize: 14,
     },
@@ -292,7 +295,7 @@ export default function Layout(props) {
                             <Grid container spacing={2}>
                                 <Grid item>
                                     <Typography variant={"caption"}>
-                                        Do not forget to take a photo on the QR code. 
+                                        Do not forget to take a photo of the QR code. 
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -453,7 +456,7 @@ export default function Layout(props) {
                             <Grid container spacing={2}>
                                 <Grid item>
                                     <Typography variant={"caption"}>
-                                        Do not forget to take a photo on the QR code. 
+                                        Do not forget to take a photo of the QR code. 
                                     </Typography>
                                 </Grid>
                             </Grid>
