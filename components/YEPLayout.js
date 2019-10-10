@@ -232,7 +232,7 @@ export default function Layout(props) {
                                 <Button variant="contained" color="primary" size="large" fullWidth>
                                     <Typography size="51">
         
-                                        Yes, I will join
+                                        Yes, I will join ⭐
                                     </Typography>
                                 </Button>
                             </NextLink>
