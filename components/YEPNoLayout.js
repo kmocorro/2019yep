@@ -361,6 +361,7 @@ export default function Layout(props) {
                                     : submitResponse === 'success' ?
                                     <>
                                     <Typography variant="h2" align="center">Thank you</Typography>
+                                    <Typography color="textSecondary"  align="center" gutterBottom>You declined the invitation. If this is wrong, contact your HR representative immediately.</Typography>
                                     </>
                                     :
                                     <>
