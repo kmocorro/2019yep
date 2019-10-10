@@ -13,9 +13,6 @@ import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
 import PropTypes from 'prop-types';
 
-import ComingSoonCard from './ComingSoonCard';
-import ExamCodeCard from './ExamCodeCard';
-
 import NextLink from '../src/Link'
 
 
