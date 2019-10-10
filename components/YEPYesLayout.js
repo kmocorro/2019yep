@@ -814,16 +814,16 @@ export default function Layout(props) {
     
             const content = await res_submit.json();
             
-            console.log(content);
+            //console.log(content);
     
             if(content.success){
     
-                console.log(content.success);
+                //console.log(content.success);
                 setLoading(prevLoading => !prevLoading);
                 
             } else if(content.error){
     
-                console.log(content.error);
+                //console.log(content.error);
             }
     
         })();

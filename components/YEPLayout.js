@@ -87,7 +87,7 @@ export default function Layout(props) {
     const classes = useStyles();
     //console.log(props.data);
     const user = props.data;
-    console.log(user);
+    //console.log(user);
 
     return (
         <Fragment>

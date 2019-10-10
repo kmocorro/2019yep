@@ -116,7 +116,7 @@ export default function Layout(props) {
     const classes = useStyles();
     //console.log(props.data);
     const user = props.data;
-    console.log(user);
+    //console.log(user);
 
     const [values, setValues] = useState({
         reasons: 'Not happy with the Raffle Prizes'
@@ -155,17 +155,17 @@ export default function Layout(props) {
     
             const content = await res_submit.json();
             
-            console.log(content);
+            //console.log(content);
     
             if(content.success){
     
-                console.log(content.success);
+                //console.log(content.success);
                 setLoading(prevLoading => !prevLoading);
                 setSubmitResponse('success');
                 
             } else if(content.error){
     
-                console.log(content.error);
+                //console.log(content.error);
             }
     
         })();
@@ -360,7 +360,7 @@ export default function Layout(props) {
                                     </>
                                     : submitResponse === 'success' ?
                                     <>
-                                    <Typography variant="h2" align="center">Thank you</Typography>
+                                    <Typography variant="h2" align="center" gutterBottom>Thank you</Typography>
                                     <Typography color="textSecondary"  align="center" gutterBottom>You declined the invitation. If this is wrong, contact your HR representative immediately.</Typography>
                                     </>
                                     :
