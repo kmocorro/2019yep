@@ -1261,7 +1261,10 @@ export default function Layout(props) {
                                                                                     direction="row"
                                                                                     justify="flex-end"
                                                                                     alignItems="center"
-                                                                                >
+                                                                                >   
+                                                                                    <Grid item>
+                                                                                        <Typography variant="body2">Image route above is for illustration only and may or may not be the actual path. Please refer to PEC for further information.</Typography>
+                                                                                    </Grid>
                                                                                     <Grid item>
                                                                                         <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                                                                                             Back
