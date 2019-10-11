@@ -340,6 +340,12 @@ function StepCase1(data){
             Fab4
             </Typography>
         </ToggleButton>,
+        <ToggleButton key={10} value="Carpooling">
+            <Typography>
+            Carpooling
+            </Typography>
+        </ToggleButton>,
+        
     ];
 
     return (
@@ -964,7 +970,7 @@ export default function Layout(props) {
                         <>
                         {/** IF USER IS NOT REGISTERED YET -- HINT: TOKEN */}
                             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                                Yay, Great! 
+                                Yey, Great! 
                             </Typography>
                             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                                 Just a few details before you go...
