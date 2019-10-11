@@ -799,40 +799,82 @@ export default function Layout(props) {
         
         setActiveStep(prevActiveStep => prevActiveStep + 1);
     
-        (async () => {
-            const res_submit = await fetch(`http://dev-metaspf401.sunpowercorp.com:8080/api/yes`, {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    employeeNumber: user.employeeNumber,
-                    isAccepted: 1,
-                    transportation: transportation.value,
-                    incomingRoute: incomingRoute.value || '',
-                    outgoingRoute: outgoingRoute.value || '',
-                    reason: ''
-                })
-            });
-    
-            //console.log(res_submit);
-    
-            const content = await res_submit.json();
-            
-            //console.log(content);
-    
-            if(content.success){
-    
-                //console.log(content.success);
-                setLoading(prevLoading => !prevLoading);
+        if (transportation.value === 'car') {
+            (async () => {
+
+                const res_submit = await fetch(`http://dev-metaspf401.sunpowercorp.com:8080/api/yes`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        employeeNumber: user.employeeNumber,
+                        isAccepted: 1,
+                        transportation: transportation.value,
+                        incomingRoute: '',
+                        outgoingRoute: '',
+                        reason: ''
+                    })
+                });
+        
+                //console.log(res_submit);
+        
+                const content = await res_submit.json();
                 
-            } else if(content.error){
-    
-                //console.log(content.error);
-            }
-    
-        })();
+                //console.log(content);
+        
+                if(content.success){
+        
+                    //console.log(content.success);
+                    setLoading(prevLoading => !prevLoading);
+                    
+                } else if(content.error){
+        
+                    //console.log(content.error);
+                }
+        
+            })();
+
+        } else {
+
+            (async () => {
+
+                const res_submit = await fetch(`http://dev-metaspf401.sunpowercorp.com:8080/api/yes`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        employeeNumber: user.employeeNumber,
+                        isAccepted: 1,
+                        transportation: transportation.value,
+                        incomingRoute: incomingRoute.value || '',
+                        outgoingRoute: outgoingRoute.value || '',
+                        reason: ''
+                    })
+                });
+        
+                //console.log(res_submit);
+        
+                const content = await res_submit.json();
+                
+                //console.log(content);
+        
+                if(content.success){
+        
+                    //console.log(content.success);
+                    setLoading(prevLoading => !prevLoading);
+                    
+                } else if(content.error){
+        
+                    //console.log(content.error);
+                }
+        
+            })();
+        }
+        
     }
     /** end  GET TICKET BUTTON--- Upload details to db ---------------------------- */
 
