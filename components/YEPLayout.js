@@ -121,7 +121,7 @@ export default function Layout(props) {
         <main>
             {/* Hero unit */}
             <div className={classes.heroContent}>
-            <Container maxWidth="sm">
+            <Container maxWidth="md">
                 {
                     props.data.participated[0].isAccepted === ''  ?
                         props.data.updated_token[0].isAccepted === 1 ?
@@ -138,22 +138,22 @@ export default function Layout(props) {
                                     direction="row"
                                     justify="space-between"
                                     alignItems="center" >
-                                        <Grid item lg={9}>
+                                        <Grid item>
                                             <Typography className={classes.title} color="textSecondary" variant={"overline"}>
                                                 2019 Year End Party Ticket
                                             </Typography>
                                         </Grid>
-                                        <Grid item lg={3}>
+                                        <Grid item>
                                             <Typography align="right" className={classes.title} color="textSecondary" variant={"overline"}>
-                                                {user.employeeNumber} {user.yep[0].location}
+                                                {props.data.updated_token[0].incomingRoute} - {props.data.updated_token[0].outgoingRoute}
                                             </Typography>
                                         </Grid>
                                     </Grid>
                                     <Grid container spacing={2}>
-                                        <Grid item lg={4}>
-                                            <QRCode size={150} level={"M"} value={`http://192.168.1.2:9000/?e=${user.employeeNumber}&s=${user.yep[0].shift}`} />
+                                        <Grid item lg={3}>
+                                            <QRCode size={200} level={"M"} value={`http://192.168.1.2:9000/?e=${user.employeeNumber}&s=${user.yep[0].shift}`} />
                                         </Grid>
-                                        <Grid item lg={8}>
+                                        <Grid item lg={9}>
                                             <Typography component="h2" variant="h5">
                                                 {user.displayName}
                                             </Typography>
@@ -262,22 +262,22 @@ export default function Layout(props) {
                                     direction="row"
                                     justify="space-between"
                                     alignItems="center" >
-                                        <Grid item lg={9}>
+                                        <Grid item>
                                             <Typography className={classes.title} color="textSecondary" variant={"overline"}>
                                                 2019 Year End Party Ticket
                                             </Typography>
                                         </Grid>
-                                        <Grid item lg={3}>
+                                        <Grid item>
                                             <Typography align="right" className={classes.title} color="textSecondary" variant={"overline"}>
-                                                {user.employeeNumber} {user.yep[0].location}
+                                                {props.data.updated_token[0].incomingRoute} - {props.data.updated_token[0].outgoingRoute}
                                             </Typography>
                                         </Grid>
                                     </Grid>
                                     <Grid container spacing={2}>
-                                        <Grid item lg={4}>
-                                            <QRCode size={150} level={"M"} value={`http://192.168.1.2:9000/?e=${user.employeeNumber}&s=${user.yep[0].shift}`} />
+                                        <Grid item lg={3}>
+                                            <QRCode size={200} level={"M"} value={`http://192.168.1.2:9000/?e=${user.employeeNumber}&s=${user.yep[0].shift}`} />
                                         </Grid>
-                                        <Grid item lg={8}>
+                                        <Grid item lg={9}>
                                             <Typography component="h2" variant="h5">
                                                 {user.displayName}
                                             </Typography>
