@@ -939,7 +939,7 @@ export default function Layout(props) {
                                             <Grid container spacing={2}>
                                                     <Grid item>
                                                         <Typography color="primary" variant={"subtitle2"}>
-                                                            This will serve as your ticket and a chance to win prizes on the day of the party. Drive Safely. Do not Drink and Drive.
+                                                            This will serve as your ticket. Take a photo and present your QR code at the venue. Drive Safely. Do not Drink and Drive.
                                                         </Typography>
                                                     </Grid>
                                             </Grid>
@@ -1056,7 +1056,7 @@ export default function Layout(props) {
                                                                             <Grid container spacing={2}>
                                                                                     <Grid item>
                                                                                         <Typography color="primary" variant={"subtitle2"}>
-                                                                                            This will serve as your ticket and a chance to win prizes on the day of the party. Drive Safely. Do not Drink and Drive.
+                                                                                            This will serve as your ticket. Take a photo and present your QR code at the venue. Drive Safely. Do not Drink and Drive.
                                                                                         </Typography>
                                                                                     </Grid>
                                                                             </Grid>
