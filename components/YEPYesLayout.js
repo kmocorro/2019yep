@@ -1263,7 +1263,7 @@ export default function Layout(props) {
                                                                                     alignItems="center"
                                                                                 >   
                                                                                     <Grid item>
-                                                                                        <Typography variant="body2" color="textSecondary">Routes image is for illustration only and may not be the actual path of the shuttle. Please refer to PEC for further information.</Typography>
+                                                                                        <Typography variant="body2" color="textSecondary">Route images are for illustration only and may not be the actual path of the shuttle. Please refer to PEC for further information.</Typography>
                                                                                     </Grid>
                                                                                     <Grid item>
                                                                                         <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
@@ -1329,7 +1329,7 @@ export default function Layout(props) {
                                                                             alignItems="center"
                                                                         >
                                                                             <Grid item>
-                                                                                <Typography variant="body2" color="textSecondary">By clicking 'Get Ticket', you agree that you will join to our 2019 Year End Party!</Typography>
+                                                                                <Typography variant="body2" color="textSecondary">By clicking 'Get Ticket', you agree that you will join to our 2019 Year End Party and transporation mode and routes are correct.</Typography>
                                                                             </Grid>
                                                                             <Grid item>
                                                                                 <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
@@ -1449,7 +1449,7 @@ export default function Layout(props) {
                                             <Grid container spacing={2}>
                                                     <Grid item>
                                                         <Typography color="primary" variant={"subtitle2"}>
-                                                            This will serve as your ticket and a chance to win prizes on the day of the party. Drive Safely. Do not Drink and Drive.
+                                                            This will serve as your ticket. Take a photo and present your QR code at the venue. Drive Safely. Do not Drink and Drive.
                                                         </Typography>
                                                     </Grid>
                                             </Grid>
@@ -1460,7 +1460,7 @@ export default function Layout(props) {
                             <Grid container spacing={2}>
                                 <Grid item>
                                     <Typography variant={"caption"}>
-                                        Do not forget to take a photo of the QR code. 
+                                        
                                     </Typography>
                                 </Grid>
                             </Grid>

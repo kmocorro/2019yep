@@ -94,24 +94,20 @@ const useStyles = makeStyles(theme => ({
 
 const reasons = [
   {
-    value: 'Conflict / Change Shift',
-    label: 'Conflict / Change Shift',
+    value: 'Business Travel',
+    label: 'Business Travel',
   },
   {
-    value: 'Not interested',
-    label: 'Not interested',
+    value: 'Conflict with My Personal Schedule',
+    label: 'Conflict with My Personal Schedule',
   },
   {
-    value: 'I don\'t like the theme',
-    label: 'I don\'t like the theme',
+    value: 'I\'m not happy with the theme',
+    label: 'I\'m not happy with the theme',
   },
   {
-    value: 'Not happy with the Raffle Prizes',
-    label: 'Not happy with the Raffle Prizes',
-  },
-  {
-    value: 'It\'s just personal',
-    label: 'It\'s just personal',
+    value: 'Not Interested',
+    label: 'Not Interested',
   },
 ];
 
@@ -122,7 +118,7 @@ export default function Layout(props) {
     //console.log(user);
 
     const [values, setValues] = useState({
-        reasons: 'Not happy with the Raffle Prizes'
+        reasons: 'Business Travel'
     });
 
     const handleChange = name => event => {
