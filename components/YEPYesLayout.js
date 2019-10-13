@@ -1052,7 +1052,7 @@ export default function Layout(props) {
                                                                         </Grid>
                                                                         <Grid item>
                                                                             <Typography align="right" className={classes.title} color="textSecondary" variant={"overline"}>
-                                                                                {incomingRoute.value} - {outgoingRoute.value}
+                                                                            {props.data.updated_token[0].incomingRoute} - {props.data.updated_token[0].outgoingRoute}
                                                                             </Typography>
                                                                         </Grid>
                                                                     </Grid>
